@@ -54,6 +54,8 @@ with open('players.csv', 'rb') as csvfile:
             cur_row = []
             cur_row.append(current_match_id)
             cur_row.append(row[2])
+      cur_row.append(match_result[int(current_match_id)])
+      match_player_results.append(cur_row)
 
 with open('match_player_result.csv', 'wb') as f:
     writer = csv.writer(f)

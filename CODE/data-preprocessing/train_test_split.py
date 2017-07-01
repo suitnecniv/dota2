@@ -9,7 +9,7 @@ import random
 test = []
 train = []
 
-test_train_determinant = [True]*20000 + [False]*29999
+test_train_determinant = [True]*20000 + [False]*30000
 # test_train_determinant[i] === True meaning row i in data belong to training set
 
 random.shuffle(test_train_determinant)
