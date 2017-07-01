@@ -41,4 +41,6 @@ log.txt
 players.csv
 match.csv
 match_player_result.csv
+test.csv
+train.csv
 .DS_Store
