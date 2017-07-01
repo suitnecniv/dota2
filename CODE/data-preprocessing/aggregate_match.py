@@ -1,4 +1,4 @@
-# produce match_player.csv
+# produce match_player_result.csv
 
 import csv
 
