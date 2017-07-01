@@ -5,13 +5,13 @@ from sklearn.metrics import classification_report
 
 match_result = genfromtxt('match_player_result.csv', delimiter=',', dtype=int, skip_header=1)
 
-train_X = get_attributes('train.csv')
-train_Y = get_classes('train.csv')
+train_X = get_attributes('train_binary.csv')
+train_Y = get_classes('train_binary.csv')
 
-test_X = get_attributes('test.csv')
-test_Y = get_classes('test.csv')
+test_X = get_attributes('test_binary.csv')
+test_Y = get_classes('test_binary.csv')
 
-tree_benchmark = DecisionTreeClassifier(max_leaf_nodes=100, random_state=0)
+tree_benchmark = DecisionTreeClassifier(max_leaf_nodes=50, random_state=0)
 tree_benchmark.fit(train_X, train_Y)
 y_pred_benchmark = tree_benchmark.predict(test_X)
 print (y_pred_benchmark)

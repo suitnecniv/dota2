@@ -14,7 +14,7 @@ test_train_determinant = [True]*20000 + [False]*30000
 
 random.shuffle(test_train_determinant)
 
-with open('match_player_result.csv', 'rb') as csvfile:
+with open('match_result_binary_format.csv', 'rb') as csvfile:
   reader = csv.reader(csvfile, delimiter=',')
   count = -2
 
@@ -29,10 +29,10 @@ with open('match_player_result.csv', 'rb') as csvfile:
     else:
       test.append(row)
 
-with open('test.csv', 'wb') as f:
+with open('test_binary.csv', 'wb') as f:
     writer = csv.writer(f)
     writer.writerows(test)
 
-with open('train.csv', 'wb') as f:
+with open('train_binary.csv', 'wb') as f:
     writer = csv.writer(f)
     writer.writerows(train)
