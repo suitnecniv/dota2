@@ -39,4 +39,6 @@ date_max
 log.txt
 
 players.csv
+match.csv
+match_player_result.csv
 .DS_Store
